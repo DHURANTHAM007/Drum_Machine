@@ -1,0 +1,63 @@
+#drum-machine {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 100%;
+  max-width: 450px;
+  padding: 25px;
+  background-color: #3b4b5a;
+  border: 5px solid #1a2a3a;
+  border-radius: 15px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3), 0 6px 6px rgba(0, 0, 0, 0.25);
+}
+
+#display {
+  background-color: #1a2a3a;
+  color: #cddc39; /* Lime green color for a retro feel */
+  width: 100%;
+  padding: 15px 0;
+  font-size: 1.5em;
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: bold;
+  text-align: center;
+  border-radius: 8px;
+  box-sizing: border-box;
+  min-height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.pad-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+}
+
+.drum-pad {
+  position: relative;
+  background-color: #5d6d7e;
+  color: #ffffff;
+  font-size: 2em;
+  font-weight: bold;
+  border: 2px solid #1a2a3a;
+  border-radius: 10px;
+  cursor: pointer;
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.4);
+  transition: all 0.07s ease;
+  aspect-ratio: 1 / 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.drum-pad:hover {
+  background-color: #85929e;
+}
+
+.drum-pad:active {
+  transform: scale(0.97);
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.4);
+  background-color: #cddc39;
+  color: #1a2a3a;
+}
